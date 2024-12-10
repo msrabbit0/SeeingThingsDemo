@@ -12,6 +12,7 @@ arithni - thud
 
 MODELS
 elyhaze - Gas Mask
+tasha.kosaykina - button
 
 TEXTURES
 Wall/Floor - Screaming Brain Studios

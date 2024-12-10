@@ -43,7 +43,6 @@ public class Mask : MonoBehaviour
 
     }
 
-    //refactor
     void toggleMask()
     {
         if (maskOn) //unequip mask
@@ -74,11 +73,6 @@ public class Mask : MonoBehaviour
         realWorld.SetActive(true);
         fakeWorld.SetActive(false);
         globalVolume.SetActive(true);
-    }
-
-    void setColorCorrection()
-    {
-
     }
 
 }

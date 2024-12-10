@@ -41,6 +41,7 @@ public class Player : MonoBehaviour
     {
         rigidBody = GetComponent<Rigidbody>();
         footstepsAudioSource = footstepsObject.GetComponent<AudioSource>();
+        thudSound = thudSoundObject.GetComponent<AudioSource>();
 
         rigidBody.freezeRotation = true;
     }
@@ -75,6 +76,11 @@ public class Player : MonoBehaviour
         {
            footstepsAudioSource.mute = true;
         }
+
+        if (transform.position.y < deathY)
+        {
+            respawn();
+        }
     }
 
     //check player movement every frame
@@ -92,7 +98,8 @@ public class Player : MonoBehaviour
 
     private void respawn()
     {
-
+        transform.position = respawnPoint.transform.position;
+        thudSound.Play();
     }
 
     
