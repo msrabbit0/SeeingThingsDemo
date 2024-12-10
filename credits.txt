@@ -1,0 +1,18 @@
+SEEING THINGS
+PROGRAMMING BY AUBREY LUU
+FALL 2024 CS50
+
+ASSET CREDITS
+AUDIO
+Fission9 - Footsteps loop
+lysander darkstar - Breathing
+SoundEffEcks - Gas mask equip
+kevp888 - Jazz radio
+arithni - thud
+
+MODELS
+elyhaze - Gas Mask
+
+TEXTURES
+Wall/Floor - Screaming Brain Studios
+

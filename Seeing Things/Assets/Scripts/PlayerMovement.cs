@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
     {
         grounded = Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), playerHeight * 0.5f + 10f, whatIsGround);
 
-        setMyInput();
+        setInput();
 
         if (grounded)
         {
@@ -51,7 +51,7 @@ public class Player : MonoBehaviour
         movePlayer();
     }
 
-    private void setMyInput()
+    private void setInput()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
@@ -63,10 +63,4 @@ public class Player : MonoBehaviour
 
         rigidBody.AddForce(moveDirection.normalized * movementSpeed * 10f);
     }
-
-    private void clampHeight()
-    {
-
-    }
-
 }
