@@ -19,6 +19,12 @@ public class Player : MonoBehaviour
     public Transform orientation;
     public GameObject footstepsObject;
 
+    [Header("Respawning")]
+    public GameObject playerCharacter;
+    public GameObject thudSoundObject;
+    public float deathY;
+    public GameObject respawnPoint;
+
     bool grounded;
 
     float horizontalInput;
@@ -28,6 +34,7 @@ public class Player : MonoBehaviour
 
     Rigidbody rigidBody;
     AudioSource footstepsAudioSource;
+    AudioSource thudSound;
 
     // Start is called before the first frame update
     void Start()
@@ -83,6 +90,12 @@ public class Player : MonoBehaviour
         verticalInput = Input.GetAxisRaw("Vertical");
     }
 
+    private void respawn()
+    {
+
+    }
+
+    
     //sets move direction of player
     private void movePlayer()
     {
