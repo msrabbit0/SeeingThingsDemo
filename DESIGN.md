@@ -1,0 +1,12 @@
+# Seeing Things Design Document
+## Background & Implementation
+In order to implement this project, I had to both learn C# and the Unity engine. It was a fairly large effort to learn (technically relearning the language) both the language and the engine and it was where a majority of the time I spent on the project went. Creating little feature demos to play around with Unity was a lot of fun. Eventually, the features would be refined and implemented to create the Seeing Things demo. 
+
+I come from a fairly strong game development background (my most popular "app" having 350k+ downloads), so many of the principles did carry over. However, I definitely underestimated the difference between engines. Despite everything, the demo is complete. Thanks to years of optimization and development, the Unity engine streamlines many features that would take countless hours to implement in many other game engines *(cough cough Panda3D cough cough).* 
+
+## Influences & Inspirations
+The concept is based on a level from the 2016 FPS game *Titanfall 2.* The level centers around time travel, allowing the player to switch between the future and past. Switching between the future and past will affect the world geometry, visuals, and environmental interactivity. Some portions of the level can only be passed in the past while others in the future.
+For the visual aesthetic, I based the gas mask effect on the gas mask from the game [Cry of Fear](https://store.steampowered.com/app/223710/Cry_of_Fear/). The rather funky world geometry takes influence from the game [Mouthwashing](https://store.steampowered.com/app/2475490/Mouthwashing/). The general atmosphere takes inspiration from the Horror game [Penumbra](https://en.wikipedia.org/wiki/Penumbra:_Overture).
+
+## What Might be Ahead
+At the moment, this is just a proof of concept. Though I have game development obligations outside of Unity, I may return to the engine in the near future. This was simply a baby project to learn the engine. Perhaps in the future I will put more work into the game and develop it into a full experience, but for now this is not on my mind. My ambitions are slowly stepping away from CS and though I would like to keep game development a part of my repertoire, I will not be working on any singleplayer experiences like this for a long time.
