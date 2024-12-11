@@ -5,29 +5,39 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.PostProcessing;
 
-public class Mask : MonoBehaviour
+
+//Aubrey Luu
+//Fall Yale CS100
+//Handles functionality of the mask
+
+public class MaskSystem : MonoBehaviour
 {
-    //Handles functionality of the mask
+
     [Header("Mask")]
     public bool maskAcquired;
     public bool maskOn;
     public GameObject maskBreathingSound;
     public GameObject maskEquipSound;
     public KeyCode equipBind;
+    public bool firstWear;
+    public GameObject spawnDoor;
+
 
     [Header("Game World")]
     public GameObject realWorld;
     public GameObject fakeWorld;
     public GameObject globalVolume;
+    public GameObject menuUi;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
-        maskAcquired = true;
+        maskAcquired = false;
         maskOn = false;
 
-        showFakeWorld();
+        showFakeWorld(); //start without mask
     }
 
     // Update is called once per frame
@@ -43,8 +53,16 @@ public class Mask : MonoBehaviour
 
     }
 
+    //toggles the mask and its effects
     void toggleMask()
     {
+        if (firstWear)
+        {
+            menuUi.SetActive(false);
+            firstWear = false;
+            spawnDoor.SetActive(false);
+        }
+
         if (maskOn) //unequip mask
         {
             showFakeWorld();

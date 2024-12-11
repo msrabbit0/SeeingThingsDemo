@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
 
         setInput();
 
-        limitHorizontalVelocity();
+        limitHorizontalVelocity(); //no sliding
 
         //apply drag ONLY if character is on the ground
         if (grounded)
@@ -96,6 +96,7 @@ public class Player : MonoBehaviour
         verticalInput = Input.GetAxisRaw("Vertical");
     }
 
+    //respawn in the case of falling into the void
     private void respawn()
     {
         transform.position = respawnPoint.transform.position;

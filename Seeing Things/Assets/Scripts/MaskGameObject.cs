@@ -1,20 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
+//Aubrey Luu
+//Fall Yale CS100
+//Script belonging to the in game mask object
 public class MaskGameObject : MonoBehaviour
 {
     public GameObject maskSystemObject;
-    public GameObject acquired;
-
-    
-
+    public bool acquired;
+    //Click to pick up
     void OnMouseDown()
     {
-        
-        maskSystemObject.GetComponent<>
-        
+        if (!acquired)
+        {
+            maskSystemObject.GetComponent<MaskSystem>().maskAcquired = true;
+            transform.position = new Vector3(0, 10000f, 0); //bye
+
+            acquired = true;
+        }
     }
 
 }
